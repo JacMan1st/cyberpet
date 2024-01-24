@@ -76,7 +76,7 @@ const pets = {
         feed: "images/pcockfeed.gif",
         drink: "images/pcockfeed.gif",
         sleep: "images/pcocksleep.gif",
-        play: "images/pcockplay.gif",
+        play: "images/pcockpoop.gif",
         poop: "images/pcockpoop.gif"
     }),
 };
