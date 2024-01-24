@@ -24,7 +24,7 @@ class Pet {
 
         // health changes based on the action
         switch (action.toLowerCase()) {
-            // Convert action to lowercase for case-insensitive comparison
+            // convert action to lowercase for case insensitive comparison
             case 'play':
                 this.energy -= 40;
                 break;
@@ -49,7 +49,7 @@ class Pet {
         console.log(`${this.name} performed ${action}! Energy level: ${this.energy}`);
     }
 }
-
+    // individual pet action images set 
 const pets = {
     dino1: new Pet('Dino 1', 'images/dino1.gif', {
         feed: "images/dino1.1.gif",
@@ -134,7 +134,3 @@ function changePet() {
         updateHealthStatus();
     }, 5000);
 }
-
-
-
-

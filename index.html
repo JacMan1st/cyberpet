@@ -1,9 +1,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 <title>Animal Insycn </title>
-<style>
-    @import url('https://fonts.google.com/specimen/Pixelify+Sans?preview.text=something%20a&query=pixel');
-</style>
 </head>
 
 <body>
@@ -13,24 +10,26 @@
 </div>
 
 <div id="game-container">
-    
+        <!-- chamges to healthbar when pet is selected -->
     <div id="health-status">Choose a pet to see their health!</div> 
-<img id="selected-pet" class="pet-image" src="images/eggwarm.gif" alt="Selected Pet">
+        <!-- beginging image before a pet is picked -->
+    <img id="selected-pet" class="pet-image" src="images/eggwarm.gif" alt="Selected Pet">
 
+        <!-- the pet picker and dropdown -->
     <div id="pet-options">
     <label for="pet-dropdown">Pick a pet:</label>
 
 <select id="pet-dropdown" onchange="changePet()">
     <option id="pickaPet" value="" disabled selected>Select a pet</option>
-    <option value="dino1">Dino 1</option>
-    <option value="dino2">Dino 2</option>
-    <option value="dino3">Dino 3</option>
-    <option value="dino4">Dino 4</option>
+    <option value="dino1">Trevor</option>
+    <option value="dino2">Trixie</option>
+    <option value="dino3">Brian</option>
+    <option value="dino4">Penny</option>
 
     
 </select>
 
-        <!-- Action buttons -->
+        <!-- action buttons -->
         <div id="action-buttons">
             <div id="action-buttons">
             <button class="action-button" onclick="performAction('feed')">Feed</button>
@@ -38,9 +37,6 @@
             <button class="action-button" onclick="performAction('play')">Play</button>
             <button class="action-button" onclick="performAction('poop')">Poop</button>
             <button class="action-button" onclick="performAction('sleep')">Sleep</button>
-            <!-- <button class="action-button" onclick="performAction('warm up')">Warm Up</button> -->
-
-<!-- Health status will be displayed here -->
         </div>
     </div>
 </div>
